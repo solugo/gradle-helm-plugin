@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: "{{ .Values.name | required "Please provide a name" }}"
+data:
+  hello.txt: |
+    Hello World
